@@ -21,7 +21,7 @@ final class UserLoginServiceTest extends TestCase
 
         $userLoginService->manualLogin($user);
 
-        $this->assertContains($user,$userLoginService->getLoggerUsers());
+        $this->assertContains($user, $userLoginService->getLoggerUsers());
     }
 
     /**
@@ -42,15 +42,5 @@ final class UserLoginServiceTest extends TestCase
         $userLoginService->manualLogin($user);
     }
 
-    /**
-     * @test
-     */
-    public function xUsersInExternalSessions()
-    {
-        $userLoginService = new UserLoginService();
 
-        $userLoginService->getExternalSessions();
-
-        $this->assert
-    }
 }
