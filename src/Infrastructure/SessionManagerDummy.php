@@ -3,8 +3,9 @@
 namespace UserLoginService\Infrastructure;
 
 use Exception;
+use UserLoginService\Application\SessionManager;
 
-class FacebookSessionManagerDummy extends FacebookSessionManager
+class SessionManagerDummy implements SessionManager
 {
     /**
      * @throws Exception
