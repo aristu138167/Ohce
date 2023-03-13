@@ -31,7 +31,7 @@ class UserLoginService
     public function getExternalSessions(): int
     {
         $facebookSessionManager= new FacebookSessionManager();
-        return $facebookSessionManager.getSessions();
+        return $facebookSessionManager.getSessions()
     }
 
 }
