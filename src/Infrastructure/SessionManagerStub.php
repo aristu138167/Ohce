@@ -14,4 +14,9 @@ class SessionManagerStub implements SessionManager
     {
         return 9;
     }
+
+    public function logout(string $userName): bool
+    {
+        return true;
+    }
 }

@@ -2,14 +2,13 @@
 
 namespace UserLoginService\Infrastructure;
 
-use Exception;
 use UserLoginService\Application\SessionManager;
 
-class FakeSessionManager implements SessionManager
-{
+class SpySessionManager implements SessionManager{
+
     public function login(string $userName, string $password): bool
     {
-        return $userName=='userName' && $password=='password';
+        return true;
     }
 
     public function getSessions(): int
@@ -18,6 +17,7 @@ class FakeSessionManager implements SessionManager
     }
     public function logout(string $userName): bool
     {
-        return $userName=='userName';
+
+        return true;
     }
 }

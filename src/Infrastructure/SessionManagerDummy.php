@@ -22,4 +22,12 @@ class SessionManagerDummy implements SessionManager
     {
         throw new Exception;
     }
+
+    /**
+     * @throws Exception
+     */
+    public function logout(string $userName): bool
+    {
+        throw new Exception;
+    }
 }
