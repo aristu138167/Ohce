@@ -8,7 +8,7 @@ grumphp:
             always_execute: false
             order: null
        phpcs:
-            standard: []
+            standard: PSR12
             severity: ~
             error_severity: ~
             warning_severity: ~
